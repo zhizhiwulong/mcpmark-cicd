@@ -1,7 +1,5 @@
 function foo() {
-  const unused = 42
-  console.log("Hello world")
-  return 1
+  return 1;
 }
 
-module.exports = foo
+module.exports = foo;
