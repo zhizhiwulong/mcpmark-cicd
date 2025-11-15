@@ -22,9 +22,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Install ESLint globally
-        run: npm install -g eslint
+      - name: Install ESLint globally (v8)
+        run: npm install -g eslint@8.57.0
 
-      - name: Run ESLint
+      - name: Run ESLint with project config
         run: |
-          eslint "src/**/*.js"
+          eslint --config .eslintrc.json "src/**/*.js"
